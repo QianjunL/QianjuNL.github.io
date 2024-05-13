@@ -46,7 +46,7 @@ const Skills = () => {
             <div className="title">
                 <img src="/people.webp" alt="" />
                 <h1>
-                    <motion.b whileHover={{ color: "orange" }}>Skills</motion.b>Ideas
+                    Power<motion.b whileHover={{ color: "orange" }}> Skills</motion.b>
                 </h1>
             </div>
             <div className="title">
@@ -61,11 +61,12 @@ const Skills = () => {
                 <h2>Front-end</h2>
                 <div class="tag-container">
                     <span className="tag">JavaScript</span>
-                    <span className="tag">TypeScipr</span>
+                    <span className="tag">TypeScipt</span>
                     <span className="tag">React.js</span>
                     <span className="tag">Next.js</span>
                     <span className="tag">Angular.js</span>
                     <span className="tag">Tailwinc CSS/SASS/CSS/Bootstrap</span>
+                    <span className="tag">Ant Design</span>
                     <span className="tag">HTML</span>
                 </div>
                 </motion.div>
@@ -85,12 +86,14 @@ const Skills = () => {
                 <motion.div className="box" whileHover={{background: "lightgray", color: "black"}}>
                 <h2>Builds/Tools</h2>
                 <div class="tag-container">
+                <span className="tag">Vercel</span>
+                <span className="tag">Vite</span>
                     <span className="tag">Git</span>
                     <span className="tag">AWS3</span>
                     <span className="tag">Google Cloud</span>
                     <span className="tag">Postman</span>
                     <span className="tag">Figma</span>
-                    <span className="tag">Axure</span>
+
                     <span className="tag">JIRA/Confluence</span>
                 </div>
                 </motion.div>

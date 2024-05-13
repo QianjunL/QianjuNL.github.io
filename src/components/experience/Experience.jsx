@@ -11,7 +11,7 @@ const items = [
       id: 1,
       title: "Product Manager",
       company_name: "QIMA",
-      logo: "/instagram.png",
+      logo: "/qimalogo.jpeg",
       iconBg: "#383E56",
       date: "September 2021 - April 2023",
       points: [
@@ -26,9 +26,9 @@ const items = [
         id: 2,
       title: "Product Manager",
       company_name: "Smartmore",
-    //   icon: tesla,
+      logo: "/smartmore-logo.jpeg",
       iconBg: "#E6DEDD",
-      date: "Feburary 2020 - June 20221",
+      date: "Feburary 2020 - June 2021",
       points: [
         "Led the delivery and iterations of the algorithm SASS platform and more than 10 AI projects ",
         "Defined over 200 user stories of the platform through functional analysis",
@@ -50,7 +50,7 @@ const items = [
         transition: {
           type: "spring",
           duration: 1.25,
-          delay: delay,
+          delay: delay,  
         },
       },
     };

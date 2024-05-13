@@ -25,11 +25,13 @@
     padding: 10px;
 
     h3 {
+      font-size: 22px;
       @include mobile {
         font-size: 12px;
     }
 
     p {
+      font-size: 18px;
       @include mobile {
         padding: 0;
     }
@@ -43,7 +45,7 @@
   }
   
   .desc {
-    font-size: 14px;
+    font-size: 16px;
     color: gray;
     padding-left: 4px;
     letter-spacing: 0.05em;
