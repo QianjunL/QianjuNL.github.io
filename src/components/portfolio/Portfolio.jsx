@@ -70,6 +70,7 @@ const Single = ({item}) => {
             <div className="container">
                 <div className="wrapper">
                     <div className="imageContainer"  ref={ref} >
+                    {console.log('Video URL:', item.video)}
                 <iframe src={item.video} width="640" height="480" allow="autoplay"></iframe>
                 </div>
                 <motion.div 
