@@ -3,16 +3,20 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://qianjun-ql.github.io",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.1.0",
     "esbuild": "^0.21.1",
     "framer-motion": "^10.16.4",
+    "gh-pages": "^6.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-vertical-timeline-component": "^3.6.0",
