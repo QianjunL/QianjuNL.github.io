@@ -52,7 +52,6 @@
             width: 100%;
         }
 
-
         .title {
             display: flex;
             gap: 50px;
@@ -82,7 +81,6 @@
 
                 @include mobile {
                     font-size: 24px;
-
                 }
             }
 
@@ -102,7 +100,6 @@
                 }
             }
         }
-        
     }
 
     .listContainer {
@@ -118,8 +115,8 @@
 
         .box {
             padding: 50px;
+            flex: 1;
             border: 0.5px solid gray;
-            display: flex;
             flex-direction: column;
             justify-content: space-between;
 
@@ -130,38 +127,81 @@
                 padding: 20px;
             }
 
-            p {
-                @include mobile {
-                  display: none;
-                }
-              }        
+            h2 {
+                margin-bottom: 10px;
+            }
 
+            p {
+                margin-bottom: 10px;
+                @include mobile {
+                    display: none;
+                }
+            }
 
             .tag-container {
+                margin-top: 20px;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-              }
-              
-              .tag {
-                background-color: orange;
-                color: #333;
-                padding: 5px 10px;
-                border-radius: 20px;
-                // margin-right: 6px;
-                // margin-bottom: 20px;
-                margin-top: 20px;
-                font-size: 16px;
-                width: 100%;
-                text-align: center;
-                    @include mobile {
-                        display: none;
-                    }
-              }
+            }
 
+            .tag {
+                background-color: orange;
+                position: relative;
+                color: black;
+                padding: 5px 10px;
+                border-radius: 5px;
+                margin-right: 20px;
+                margin-bottom: 10px;
+                font-size: 16px;
+                text-align: center;
+                overflow: hidden;
+                cursor: pointer;
+
+                @include mobile {
+                    display: none;
+                }
+
+                .progress-bar {
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    background-color: rgba(102, 51, 153, 0.8);
+                    z-index: 1;
+                    height: 100%;
+                    border-radius: 5px;
+                }
+
+                &:hover .progress-bar {
+                    display: block;
+                }
+
+                .tag-name {
+                    z-index: 2;
+                }
+
+                &:hover .tag-name {
+                    visibility: hidden;
+                }
+
+                .percentage {
+                    display: none;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    font-weight: bold;
+                    z-index: 2;
+                }
+
+                &:hover .percentage {
+                    display: block;
+                }
+            }
         }
-        
+
         button {
             padding: 10px;
             background-color: orange;

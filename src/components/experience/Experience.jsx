@@ -63,10 +63,10 @@ const items = [
           contentStyle={{
             background: "transparent",
             padding: "10px",
-            boxShadow: "none"
+            boxShadow: "none",
           }}
           contentArrowStyle={{
-            borderRight: "12px solid white"
+            borderRight: "12px solid orange"
           }}
           date={item.date}
           iconStyle={{

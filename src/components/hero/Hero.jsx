@@ -39,12 +39,6 @@ const sliderVariants = {
 };
 
 const Hero = () => {
-
-    const handleButtonClick = () => {
-        console.log('Button clicked');
-        // Add any other logic here
-      };
-
   return (
     <div className="hero">
         <div className="wrapper">
@@ -60,19 +54,16 @@ const Hero = () => {
                 <a href="#Portfolio">
                 <motion.button 
                 variants={textVariants}
-                onClick={handleButtonClick}
                 >
-                    See the Latest Work
+                    See my Latest Work
                     </motion.button>
                 </a>
-                {/* <a href="#Contact"> */}
-                    <motion.button 
-                    variants={textVariants}
-                    href={'#Contact'}
-                    >
-                        Contact Me
-                        </motion.button>
-                {/* </a> */}
+                <a href="#Contact">
+                    <motion.button variants={textVariants}>Download Resume</motion.button>
+                </a>
+                <a href="#Contact">
+                    <motion.button variants={textVariants}>Contact Me</motion.button>
+                </a>
             </motion.div>
             <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="scroll" />
             </motion.div>

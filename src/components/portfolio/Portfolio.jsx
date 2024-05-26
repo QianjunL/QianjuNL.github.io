@@ -10,7 +10,7 @@ const items = [
         title: "Full-stack Ecommerce System",
         video: "https://drive.google.com/file/d/1y114sxbk__VeUnOE8MhsUDZ4EdUfSHAp/preview",
         tech: "React, Next.js, NextAuth.js, AWS3, Tailwind CSS, MongoDB, Axios, Stripe",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt illo sint necessitatibus cum asperiores quisquam saepe voluptatem in vitae similique, incidunt consectetur maxime enim neque suscipit eaque expedita? Voluptate, nemo.",
+        desc: "Implemented major workflow features including Google Signon, products, cart, order, payment, profile.",
         url:"https://github.com/QianjunL/ecommerce-front",
         
     },
@@ -18,7 +18,7 @@ const items = [
         id: 2,
         title: "MERN Doctor Appointment Website",
         video: "https://drive.google.com/file/d/1W3wtxOcWjNIxBErI6k6Gtyi5m5iKHJ30/preview",
-        desc: "Key Accomplishments: A full-stack website including registration and login modules, user information management, 2 sets of separate access controls, and a booking and payment system.",
+        desc: "Key Accomplishments: A full-stack website including user registration and login modules, user information management, 2 sets of separate access controls, and a booking and payment system. This website allows users and doctors to login and manger their info separately, ",
         tech: "React, Express.js, MongoDB, Node.js, Tailwind CSS, Cloudinary, Stripe",
         url: "https://github.com/qianjun-ql/doctor-appointment",
     },
@@ -70,7 +70,6 @@ const Single = ({item}) => {
             <div className="container">
                 <div className="wrapper">
                     <div className="imageContainer"  ref={ref} >
-                    {console.log('Video URL:', item.video)}
                 <iframe src={item.video} width="640" height="480" allow="autoplay"></iframe>
                 </div>
                 <motion.div 

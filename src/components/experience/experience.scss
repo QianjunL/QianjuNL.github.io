@@ -15,17 +15,20 @@
 
   .experience .vertical-timeline {
     margin-top: 40px;
+
 }
   
   .experience .vertical-timeline-element-icon {
     border: none !important;
   }
+
   
   .textContainer {
     padding: 10px;
 
     h3 {
       font-size: 22px;
+      color: orange;
       @include mobile {
         font-size: 12px;
     }
@@ -36,6 +39,7 @@
         padding: 0;
     }
     }
+
     }
   }
 
@@ -46,7 +50,7 @@
   
   .desc {
     font-size: 16px;
-    color: gray;
+    color: #D3D3D3;
     padding-left: 4px;
     letter-spacing: 0.05em;
 
