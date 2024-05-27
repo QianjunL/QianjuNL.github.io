@@ -10,7 +10,10 @@ const items = [
         title: "Full-stack Ecommerce System",
         video: "https://drive.google.com/file/d/1y114sxbk__VeUnOE8MhsUDZ4EdUfSHAp/preview",
         tech: "React, Next.js, NextAuth.js, AWS3, Tailwind CSS, MongoDB, Axios, Stripe",
-        desc: "Implemented major workflow features including Google Signon, products, cart, order, payment, profile.",
+        desc: "The client side implemented major workflow features including Google Signon, products, cart, order, payment, profile, while the admin side implemented data analysis and product/category/order management.",
+        howTo: [
+
+        ],
         url:"https://github.com/QianjunL/ecommerce-front",
         
     },
@@ -18,7 +21,7 @@ const items = [
         id: 2,
         title: "MERN Doctor Appointment Website",
         video: "https://drive.google.com/file/d/1W3wtxOcWjNIxBErI6k6Gtyi5m5iKHJ30/preview",
-        desc: "Key Accomplishments: A full-stack website including user registration and login modules, user information management, 2 sets of separate access controls, and a booking and payment system. This website allows users and doctors to login and manger their info separately, ",
+        desc: "A full-stack website including user registration and login modules, user information management, 2 sets of separate access controls, and a booking and payment system. This website allows users and doctors to login and manger their info separately, ",
         tech: "React, Express.js, MongoDB, Node.js, Tailwind CSS, Cloudinary, Stripe",
         url: "https://github.com/qianjun-ql/doctor-appointment",
     },
@@ -49,9 +52,9 @@ const items = [
         id: 6,
         title: "Blog App and Admin Portal",
         video: "https://drive.google.com/file/d/18A5ICmM-6biPjSO6ssTLV3KxE33w6w55/preview",
-        tech: "Angular.js",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt illo sint necessitatibus cum asperiores quisquam saepe voluptatem in vitae similique, incidunt consectetur maxime enim neque suscipit eaque expedita? Voluptate, nemo.",
-        url: "https://github.com/Cheryl-LL",
+        tech: "Angular, Firebase, TypeScript, bootstrap, rxJS, Angular Editor",
+        desc: "The blog system consists of the client side and the admin side. The admin site allows admins to add a post category, add/edit a post, and manage subscription list. The client side allows users to view posts based on category and recommended posts, leave and show feedback, and subscribe to the website.",
+        url: "https://github.com/qianjun-ql/angular-blog-app",
     },
 ];
 
@@ -77,7 +80,7 @@ const Single = ({item}) => {
                 style= {{ y }} 
                 >
                     <h2>{item.title}</h2>
-                    <p>{item.desc}</p>
+                    <p>Key Accomplishments: {item.desc}</p>
                     <p>Technology Stack: {item.tech}</p>
                     <a href={item.url} target="_blank" rel="noopener noreferrer">
                     <button>Github Code</button>

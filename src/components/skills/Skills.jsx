@@ -23,7 +23,7 @@ const fTags = [
     { name: "JavaScript", percentage: 90 },
     { name: "React", percentage: 80 },
     { name: "Next.js", percentage: 80 },
-    { name: "Angular.js", percentage: 80 },
+    { name: "Angular", percentage: 80 },
     { name: "Tailwind CSS/SASS/CSS/Bootstrap", percentage: 80 },
     { name: "HTML", percentage: 80 },
     { name: "TypeScript", percentage: 70 },
@@ -83,7 +83,7 @@ const Skills = () => {
                     <h1>
                         <motion.b whileHover={{ color: "orange" }}>For Your</motion.b> Business
                     </h1>
-                    <button>What We Do?</button>
+                    {/* <button>What I Do?</button> */}
                 </div>
             </motion.div>
             <motion.div className="listContainer" variants={variants}>

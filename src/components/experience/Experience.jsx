@@ -15,11 +15,11 @@ const items = [
       iconBg: "#383E56",
       date: "September 2021 - April 2023",
       points: [
-        "Led and managed the IT system for the business line with $70M annual revenue, ensuring effective support to over 98 % of all business scenarios",
+        "Led and managed the order management system client website for the business line with $70M annual revenue, ensuring effective support to over 98 % of all business scenarios",
         "Led and delivered 40+ cross-functional software projects, achieving 100% on-time delivery",
         "Lead and worked in a scrum team of 6 members and hosted scrum planning and grooming meetings",
-        "Created product prototypes in Figma, product documentationm and user instructions in Confluence"
-        
+        "Prepared requirement documents, release plans and technical documents for over 10 IT projects, ensuring 100% goal achievement rate",
+        "Managed customer expectations and improved customer satisfaction to 98% by ensuring high-priority troubleshooting solved within 1 day"
       ],
     },
     {
@@ -30,9 +30,11 @@ const items = [
       iconBg: "#E6DEDD",
       date: "Feburary 2020 - June 2021",
       points: [
-        "Led the delivery and iterations of the algorithm SASS platform and more than 10 AI projects ",
-        "Defined over 200 user stories of the platform through functional analysis",
-        "Defined and led the development of product benchmarks 5 times faster than the original to 0.2s/frame through technical analysis, making #1 algorithm in the industry"
+        "Lead the delivery and iteration of the super-algorithm product and more than 10 AI projects",
+        "Defined and led the development of product benchmarks 5 times faster than the original to 0.2s/frame through technical analysis, making #1 algorithm in the industry",
+        "Identified and solved over 5 major bugs before the release of the super-algorithm product",
+        "Completed the delivery of the company’s 1st AI project in one month by self-directedly learning computer vision AI technologies",
+        "Conducted analysis reports including product flowcharts and business scenarios on major competitors to define product benchmarks"
         
       ],
     },
@@ -66,7 +68,7 @@ const items = [
             boxShadow: "none",
           }}
           contentArrowStyle={{
-            borderRight: "12px solid orange"
+            borderRight: "12px solid orange",
           }}
           date={item.date}
           iconStyle={{
@@ -75,11 +77,17 @@ const items = [
           }}
           icon={<img src={item.logo} alt="" />}
         >
-          <motion.div className="textContainer" variants={variants}>
+            
+          <motion.div 
+          className="textContainer" 
+          variants={variants}
+          >
             <h3>{item.title}</h3>
             <p>{item.company_name}</p>
           </motion.div>
-          <motion.div className="desc">
+          <motion.div 
+          className="desc"
+          >
             <ul>
               {item.points.map((point, index) => (
                 <li key={index}>{point}</li>

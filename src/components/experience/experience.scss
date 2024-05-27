@@ -10,12 +10,17 @@
 
 .experience .vertical-timeline-element {
     border: none !important;
-    margin-top: 40px;
+    // width: 150%;
+    // margin-top: 40px;
   }
 
   .experience .vertical-timeline {
-    margin-top: 40px;
+    // margin-top: 40px;
+    position: relative;
+}
 
+.vertical-timeline.vertical-timeline--two-columns:before {
+  right: 30% !important;
 }
   
   .experience .vertical-timeline-element-icon {

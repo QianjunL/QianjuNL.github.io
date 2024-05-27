@@ -19,7 +19,7 @@ const Navbar = () => {
                     <a href="https://www.linkedin.com/in/qianjun-liang-a27079279/" target="_blank">
                         <img src="/LinkedIn_icon.svg" alt="LinkedIn" />
                     </a>
-                    <a href="https://github.com/QianjunL" target="_blank">
+                    <a href="https://github.com/qianjun-ql" target="_blank">
                         <img src="/github4.png" alt="github" />
                     </a>
                     <a href="mailto:cheryl0516liang@gmail.com" target="_blank">

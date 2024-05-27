@@ -54,11 +54,12 @@ const Hero = () => {
                 <a href="#Portfolio">
                 <motion.button 
                 variants={textVariants}
+                style={{background: "orange", color: "black", fontWeight: "bold", border: "orange"}}
                 >
                     See my Latest Work
                     </motion.button>
                 </a>
-                <a href="#Contact">
+                <a href="Qianjun Liang_Resume_Software Developer_Frontend Developer.docx">
                     <motion.button variants={textVariants}>Download Resume</motion.button>
                 </a>
                 <a href="#Contact">
