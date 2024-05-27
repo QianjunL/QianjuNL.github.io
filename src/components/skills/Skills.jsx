@@ -112,7 +112,7 @@ const Skills = () => {
                         ))}
                     </div>
                 </motion.div>
-                <motion.div className="box" whileHover={{ background: "lightgray", color: "black" }}>
+                <motion.div className="box">
                     <h2>Back-end</h2>
                     <ul>
                         <li>
@@ -136,7 +136,7 @@ const Skills = () => {
                         ))}
                     </div>
                 </motion.div>
-                <motion.div className="box" whileHover={{ background: "lightgray", color: "black" }}>
+                <motion.div className="box">
                     <h2>Builds/Tools</h2>
                     <ul>
                         <li>
