@@ -14,7 +14,8 @@ const items = [
         howTo: [
 
         ],
-        url:"https://github.com/QianjunL/ecommerce-front",
+        url: "https://github.com/qianjun-ql/ecommerce-admin",
+        url2:"https://github.com/QianjunL/ecommerce-front",
         
     },
     {
@@ -54,7 +55,8 @@ const items = [
         video: "https://drive.google.com/file/d/18A5ICmM-6biPjSO6ssTLV3KxE33w6w55/preview",
         tech: "Angular, Firebase, TypeScript, bootstrap, rxJS, Angular Editor",
         desc: "The blog system consists of the client side and the admin side. The admin site allows admins to add a post category, add/edit a post, and manage subscription list. The client side allows users to view posts based on category and recommended posts, leave and show feedback, and subscribe to the website.",
-        url: "https://github.com/qianjun-ql/angular-blog-app",
+        url: "https://github.com/qianjun-ql/angular-blog-admin",
+        url2: "https://github.com/qianjun-ql/angular-blog-app"
     },
 ];
 
@@ -82,9 +84,16 @@ const Single = ({item}) => {
                     <h2>{item.title}</h2>
                     <p>Key Accomplishments: {item.desc}</p>
                     <p>Technology Stack: {item.tech}</p>
+                    <div>
                     <a href={item.url} target="_blank" rel="noopener noreferrer">
-                    <button>Github Code</button>
-            </a>
+                        <button>Github Code</button>
+                    </a>
+                    {item.url2 && (
+                        <a href={item.url2} target="_blank" rel="noopener noreferrer">
+                        <button>Github Code Client Side</button>
+                        </a>
+                    )}
+                    </div>
 
                 </motion.div>
                 </div>

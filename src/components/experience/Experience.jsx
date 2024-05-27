@@ -77,25 +77,21 @@ const items = [
           }}
           icon={<img src={item.logo} alt="" />}
         >
-            
-          <motion.div 
-          className="textContainer" 
-          variants={variants}
-          >
-            <h3>{item.title}</h3>
-            <p>{item.company_name}</p>
-          </motion.div>
-          <motion.div 
-          className="desc"
-          >
-            <ul>
-              {item.points.map((point, index) => (
-                <li key={index}>{point}</li>
-              ))}
-            </ul>
-          </motion.div>
-        </VerticalTimelineElement>
-      </div>
+                <div className="textContainer">
+                    <motion.div variants={variants}>
+                        <h3>{item.title}</h3>
+                        <p>{item.company_name}</p>
+                    </motion.div>
+                    <motion.div className="desc">
+                        <ul>
+                            {item.points.map((point, index) => (
+                                <li key={index}>{point}</li>
+                            ))}
+                        </ul>
+                    </motion.div>
+                </div>
+            </VerticalTimelineElement>
+        </div>
     );
   };
   
