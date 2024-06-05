@@ -15,11 +15,13 @@
     @include mobile {
       padding-top: calc(100vh - 100px);
       font-size: 24px;
+      display: none;
     }
 
     h1 {
       @include mobile {
-        font-size: 30px;
+        // font-size: 30px;
+        display: none;
       }
     }
 
@@ -48,7 +50,8 @@
 
       @include mobile {
         flex-direction: column;
-        gap: 20px;
+        // gap: 20px;
+        padding: 20px;
       }
 
       .imageContainer {
@@ -61,9 +64,6 @@
         }
 
         iframe {
-          //   width: 100%;
-          //   height: 100%;
-
           @include mobile {
             margin-top: 40px;
             width: 100%;
@@ -92,10 +92,12 @@
         transform: none !important;
         align-items: center;
         text-align: center;
+        gap: 15px;
       }
 
       h1 {
         @include mobile {
+          display: none;
         }
       }
 
@@ -112,10 +114,9 @@
 
         @include mobile {
           font-size: 14px;
-          padding: 10px;
-          //   display: none;
         }
       }
+
       button {
         background-color: orange;
         border: none;
