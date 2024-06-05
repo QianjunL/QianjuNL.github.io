@@ -6,10 +6,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: justify;
 
   @include mobile {
-    flex-direction: column;
+    // flex-direction: column;
     padding: 10px;
+    height: max-content;
+    overflow-y: auto;
   }
 }
 
@@ -93,6 +96,11 @@ img {
   color: black;
   background-color: lightgray !important;
   transition: background-color 0.3s ease, color 0.3s ease;
+
+  @include mobile {
+    height: max-content;
+    overflow-y: auto;
+  }
 }
 
 .vertical-timeline-element-content .vertical-timeline-element-date {

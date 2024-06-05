@@ -9,22 +9,34 @@ import Cursor from "./components/cursor/Cursor";
 import Experience from "./components/experience/Experience";
 
 const App = () => {
-  return ( 
+  return (
     <div>
       <Cursor />
-    <section id="Homepage">
-      <Navbar/>
-      <Hero/>
-    </section>
-    <section id="Skills"><Parallax type="skills"/></section>
-    <section><Skills/></section>
-    <section id="Experience"><Parallax type="experience"/></section>
-    <section><Experience /></section>
-    <section id="Portfolio"><Parallax type="portfolio"/></section>
-    <Portfolio/>
-    <section id="Contact"><Contact /></section>
-  </div>
-  )
+      <section id="Homepage">
+        <Navbar />
+        <Hero />
+      </section>
+      <section id="Skills">
+        <Parallax type="skills" />
+      </section>
+      <section>
+        <Skills />
+      </section>
+      <section id="Experience">
+        <Parallax type="experience" />
+      </section>
+      <section>
+        <Experience />
+      </section>
+      <section id="Portfolio">
+        <Parallax type="portfolio" />
+      </section>
+      <Portfolio />
+      <section id="Contact">
+        <Contact />
+      </section>
+    </div>
+  );
 };
 
 export default App;
