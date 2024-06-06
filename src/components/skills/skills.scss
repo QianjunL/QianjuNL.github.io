@@ -9,7 +9,8 @@
 
   @include mobile {
     transform: none !important;
-    overflow-y: auto !important;
+    scroll-snap-type: none !important;
+    overflow-y: auto;
   }
 
   .textContainer {
