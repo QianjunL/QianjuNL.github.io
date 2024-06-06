@@ -101,10 +101,13 @@ img {
 
   @include mobile {
     height: max-content;
-    overflow-y: auto;
   }
 }
 
 .vertical-timeline-element-content .vertical-timeline-element-date {
   color: #d3d3d3;
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-date:hover {
+  color: black;
 }

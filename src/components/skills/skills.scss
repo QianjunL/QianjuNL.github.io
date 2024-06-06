@@ -9,8 +9,9 @@
 
   @include mobile {
     transform: none !important;
+    height: calc(var(--vh, 1vh) * 100);
     scroll-snap-type: none !important;
-    overflow-y: auto;
+    height: fit-content;
   }
 
   .textContainer {
