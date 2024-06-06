@@ -111,6 +111,7 @@
       p {
         color: gray;
         font-size: 20px;
+        text-align: justify;
 
         @include mobile {
           font-size: 14px;
@@ -128,9 +129,12 @@
 
         @include mobile {
           //   width: 40%;
-          // display: flex;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           margin-bottom: 20px;
           color: black;
+          margin-right: 0;
         }
       }
     }
