@@ -11,6 +11,7 @@
 
   @include mobile {
   }
+  min-height: 100%;
 
   h1 {
     font-size: 100px;
@@ -18,7 +19,6 @@
     @include mobile {
       font-size: 60px;
       text-align: center;
-      scroll-snap-type: none !important;
     }
   }
 
