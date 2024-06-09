@@ -10,7 +10,7 @@
   overflow: hidden;
 
   @include mobile {
-    height: 100%;
+    overflow-y: auto;
   }
 
   h1 {

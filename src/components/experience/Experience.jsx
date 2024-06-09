@@ -60,7 +60,7 @@ export const variants = (delay) => {
 
 const ExperienceCard = ({ item, position }) => {
   return (
-    <div className="container">
+    <div className="experience">
       <VerticalTimelineElement
         position={position}
         contentStyle={{

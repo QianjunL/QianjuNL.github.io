@@ -1,7 +1,7 @@
 @import "../../app.scss";
 
 .experience {
-  background: linear-gradient(180deg, #0c0c1d, #111132);
+  // background: linear-gradient(180deg, #0c0c1d, #111132);
   height: 100%;
   display: flex;
   justify-content: center;
@@ -9,10 +9,15 @@
   text-align: justify;
 
   @include mobile {
-    height: auto !important; // Set height to auto for mobile
-    overflow-y: auto !important; // Enable vertical scrolling
+    height: 100% !important; // Set height to auto for mobile
+    // overflow-y: auto !important; // Enable vertical scrolling
     flex-direction: column; // Stack content vertically on mobile
-    padding: 10px; // Add padding if necessary
+    // overflow-y: auto;
+    // width: 100vh;
+    height: 100vw;
+    // flex-direction: column;
+    // overflow-y: auto;
+    // gap: 0;
   }
 
   img {
@@ -32,6 +37,19 @@
     }
   }
 
+  // // try working on these
+  // vertical-timeline-element.vertical-timeline-element--left {
+  //   @include mobile {
+  //     background-color: white;
+  //   }
+  // }
+
+  // .vertical-timeline-element-content.bounce-in {
+  //   @include mobile {
+  //     height: 200%;
+  //   }
+  // }
+
   .vertical-timeline-element-content.bounce-in:hover {
     color: black;
     background-color: lightgray !important;
@@ -40,5 +58,6 @@
 
   .vertical-timeline-element-content .vertical-timeline-element-date {
     color: #663399;
+    font-weight: 1000;
   }
 }
