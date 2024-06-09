@@ -44,7 +44,6 @@ export const variants = (delay) => {
   return {
     hidden: {
       y: -50,
-      // y: -100,
       opacity: 0,
     },
     show: {
@@ -59,10 +58,11 @@ export const variants = (delay) => {
   };
 };
 
-const ExperienceCard = ({ item }) => {
+const ExperienceCard = ({ item, position }) => {
   return (
     <div className="container">
       <VerticalTimelineElement
+        position={position}
         contentStyle={{
           background: "transparent",
           padding: "10px",
@@ -101,7 +101,11 @@ const Experience = () => {
     <div className="experience">
       <VerticalTimeline>
         {items.map((item, index) => (
-          <ExperienceCard item={item} key={index} />
+          <ExperienceCard
+            item={item}
+            key={index}
+            position={index % 2 === 0 ? "left" : "right"}
+          />
         ))}
       </VerticalTimeline>
     </div>
