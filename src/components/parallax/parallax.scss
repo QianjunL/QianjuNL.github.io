@@ -48,7 +48,7 @@
     @include mobile {
       // background-size: contain;
       background-size: 150%;
-      background-position: 50%;
+      background-position: 50% 80%;
       background-repeat: no-repeat;
     }
   }
@@ -63,7 +63,10 @@
     z-index: 1;
 
     @include mobile {
-      transform: none !important;
+      // transform: none !important;
+      background-size: 150%;
+      background-position: 50%;
+      background-repeat: repeat;
     }
   }
 }
