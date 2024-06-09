@@ -9,6 +9,10 @@
   justify-content: center;
   overflow: hidden;
 
+  @include mobile {
+    height: 100%;
+  }
+
   h1 {
     font-size: 100px;
 
