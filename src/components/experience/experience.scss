@@ -9,6 +9,10 @@
   text-align: justify;
 
   @include mobile {
+    // height: auto !important; // Set height to auto for mobile
+    overflow-y: auto !important; // Enable vertical scrolling
+    flex-direction: column; // Stack content vertically on mobile
+    padding: 10px; // Add padding if necessary
   }
 
   img {
@@ -35,10 +39,6 @@
   }
 
   .vertical-timeline-element-content .vertical-timeline-element-date {
-    color: #d3d3d3;
-  }
-
-  .vertical-timeline-element-content .vertical-timeline-element-date:hover {
-    color: black;
+    color: #663399;
   }
 }
