@@ -61,7 +61,7 @@
     z-index: 1;
 
     @include mobile {
-      height: 100vh;
+      transform: none !important;
     }
   }
 }
