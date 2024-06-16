@@ -9,7 +9,7 @@ const items = [
     id: 1,
     title: "Full-stack Ecommerce System",
     video:
-      "https://drive.google.com/file/d/1y114sxbk__VeUnOE8MhsUDZ4EdUfSHAp/preview",
+      "https://drive.google.com/file/d/1xClzy7emC2Z14BINBoUlvM_SZK674sNt/preview",
     tech: "React, Next.js, NextAuth.js, AWS3, Tailwind CSS, MongoDB, Axios, Stripe",
     desc: "The client side implemented major workflow features including Google Signon, products, cart, order, payment, profile, while the admin side implemented data analysis and product/category/order management.",
     howTo: [],
@@ -52,7 +52,7 @@ const items = [
     id: 6,
     title: "Blog App and Admin Portal",
     video:
-      "https://drive.google.com/file/d/18A5ICmM-6biPjSO6ssTLV3KxE33w6w55/preview",
+      "https://drive.google.com/file/d/1LEdHMeXcDdLXV3xsUmxtGriJ37FlohHs/preview",
     tech: "Angular, Firebase, TypeScript, bootstrap, rxJS, Angular Editor",
     desc: "The blog system consists of the client side and the admin side. The admin site allows admins to add a post category, add/edit a post, and manage subscription list. The client side allows users to view posts based on category and recommended posts, leave and show feedback, and subscribe to the website.",
     url: "https://github.com/qianjun-ql/angular-blog-admin",
