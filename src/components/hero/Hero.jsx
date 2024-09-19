@@ -66,7 +66,7 @@ const Hero = () => {
                 See my Latest Work
               </motion.button>
             </a>
-            <a href="Qianjun Liang_Resume_Software Developer_Frontend Developer.docx">
+            <a href="Qianjun Liang_Resume_Full-Stack Developer.pdf">
               <motion.button variants={textVariants}>
                 Download Resume
               </motion.button>
