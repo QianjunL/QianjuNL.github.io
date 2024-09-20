@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./experience.scss";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -10,21 +10,35 @@ import "react-vertical-timeline-component/style.min.css";
 const items = [
   {
     id: 1,
+    title: "React Developer",
+    company_name: "65Square",
+    logo: "/defendlogo.png",
+    iconBg: "#383E56",
+    date: "June 2024 - Present",
+    points: [
+      "Integrated all system APIs with Python Django backend, including data integration and real-time updates.",
+      "Implement user authentication and authorization using Redux for global state management.",
+      "Resolve daily bugs, improving system stability and user experience.",
+      "Gathered requirements and designed API architecture, leading to 100% functionality across the system.",
+    ],
+  },
+  {
+    id: 1,
     title: "Product Manager",
     company_name: "QIMA",
     logo: "/qimalogo.jpeg",
     iconBg: "#383E56",
     date: "September 2021 - April 2023",
     points: [
-      "Led and managed the order management system and client website for the business line with $70M annual revenue, ensuring effective support to over 98 % of all business scenarios",
-      "Led and delivered 40+ cross-functional software projects, achieving 100% on-time delivery",
-      "Lead and worked in a scrum team of 6 members and hosted scrum planning and grooming meetings",
-      "Prepared requirement documents, release plans and technical documents for over 10 IT projects, ensuring 100% goal achievement rate",
-      "Managed customer expectations and improved customer satisfaction to 98% by ensuring high-priority troubleshooting solved within 1 day",
+      "Led and managed the order management system and client website for the business line with $70M annual revenue, ensuring effective support to over 98 % of all business scenarios.",
+      "Led and delivered 40+ cross-functional software projects, achieving 100% on-time delivery.",
+      "Lead and worked in a scrum team of 6 members and hosted scrum planning and grooming meetings.",
+      "Prepared requirement documents, release plans and technical documents for over 10 IT projects, ensuring 100% goal achievement rate.",
+      "Managed customer expectations and improved customer satisfaction to 98% by ensuring high-priority troubleshooting solved within 1 day.",
     ],
   },
   {
-    id: 2,
+    id: 1,
     title: "Product Manager",
     company_name: "Smartmore",
     logo: "/smartmore-logo.jpeg",
@@ -65,22 +79,28 @@ const ExperienceCard = ({ item, position }) => {
         position={position}
         contentStyle={{
           background: "transparent",
-          padding: "10px",
           boxShadow: "none",
+          display: "flex",
+          justifyContent: "center", // Center horizontally
+          alignItems: "flex-start", // Allow content to grow from the top
+          padding: "2rem", // Padding for spacing
         }}
         contentArrowStyle={{
           borderRight: "12px solid orange",
+          left: "0%",
         }}
-        date={item.date}
         iconStyle={{
           background: item.iconBg,
           overflow: "hidden",
+          left: "-5%",
         }}
         icon={<img src={item.logo} alt="" />}
       >
         <div className="textContainer">
           <motion.div variants={variants}>
-            <h3>{item.title}</h3>
+            <h3>
+              {item.title}, {item.date}
+            </h3>
             <p>{item.company_name}</p>
           </motion.div>
           <motion.div className="desc">
@@ -98,16 +118,18 @@ const ExperienceCard = ({ item, position }) => {
 
 const Experience = () => {
   return (
-    <div className="experience">
-      <VerticalTimeline>
-        {items.map((item, index) => (
-          <ExperienceCard
-            item={item}
-            key={index}
-            position={index % 2 === 0 ? "left" : "right"}
-          />
-        ))}
-      </VerticalTimeline>
+    <div className="experience-page">
+      <section className="experience">
+        <VerticalTimeline>
+          {items.map((item, index) => (
+            <ExperienceCard
+              item={item}
+              key={index}
+              position={index % 2 === 0 ? "left" : "right"}
+            />
+          ))}
+        </VerticalTimeline>
+      </section>
     </div>
   );
 };

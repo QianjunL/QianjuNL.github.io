@@ -21,36 +21,49 @@ const variants = {
 
 const fTags = [
   { name: "JavaScript", percentage: 90 },
-  { name: "React", percentage: 80 },
+  { name: "React", percentage: 90 },
+  { name: "Redux", percentage: 80 },
   { name: "Next.js", percentage: 80 },
-  { name: "Angular", percentage: 80 },
-  { name: "Tailwind CSS/SASS/CSS/Bootstrap", percentage: 80 },
-  { name: "HTML", percentage: 80 },
-  { name: "TypeScript", percentage: 70 },
+  { name: "Angular", percentage: 70 },
+  { name: "CSS", percentage: 80 },
+  { name: "Tailwind CSS", percentage: 90 },
+  { name: "SCSS", percentage: 80 },
+  { name: "HTML", percentage: 90 },
+  { name: "TypeScript", percentage: 80 },
   { name: "React Native", percentage: 70 },
 ];
 
 const bTags = [
-  { name: "Node.js", percentage: 90 },
+  { name: "CSharp", percentage: 80 },
+  { name: "Java", percentage: 70 },
+  { name: "Python", percentage: 70 },
+  { name: "Node.js/Express.js", percentage: 90 },
   { name: "Express.js", percentage: 80 },
+  { name: "Spring Boot", percentage: 70 },
+  { name: "ASP.NET", percentage: 80 },
+  { name: "Django", percentage: 70 },
   { name: "MySQL", percentage: 80 },
   { name: "MongoDB", percentage: 80 },
-  { name: "Firebase", percentage: 80 },
-  { name: "Java", percentage: 70 },
-  { name: "Spring/Springboot", percentage: 70 },
-  { name: "Python", percentage: 50 },
+  { name: "PostgreSQL", percentage: 70 },
+  { name: "MSSQL", percentage: 80 },
+  { name: "Firebase", percentage: 70 },
 ];
 
 const tTags = [
+  { name: "Docker", percentage: 90 },
   { name: "Vercel", percentage: 60 },
   { name: "Vite", percentage: 60 },
-  { name: "Git", percentage: 80 },
-  { name: "AWS3", percentage: 70 },
-  { name: "Google Cloud", percentage: 70 },
+  { name: "Git", percentage: 90 },
+  { name: "AWS S3", percentage: 80 },
+  { name: "Google Cloud", percentage: 80 },
   { name: "Postman", percentage: 70 },
+  { name: "CI/CD", percentage: 80 },
   { name: "Figma", percentage: 90 },
   { name: "JIRA/Confluce", percentage: 90 },
-  { name: "Linux", percentage: 60 },
+  { name: "Linux", percentage: 80 },
+  { name: "Cypress", percentage: 60 },
+  { name: "Jest", percentage: 60 },
+  { name: "Cucumber", percentage: 60 },
 ];
 
 const Skills = () => {
@@ -82,7 +95,7 @@ const Skills = () => {
         <div className="title">
           <h1>
             <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>{" "}
-            Business
+            Organization
           </h1>
           {/* <button>What I Do?</button> */}
         </div>
@@ -93,16 +106,16 @@ const Skills = () => {
           <ul>
             <li>
               <p>
-                Complete exposure to JavaScript MERN programming and experience
-                in multiple full-stack web applications.
+                Proficient JavaScript MERN programming with experience in
+                multiple full-stack applications.
               </p>
             </li>
             <li>
               <p>
-                Fluent in React, Next.js and related tools for web development,
-                familiar with Angular, UI frameworks such as Ant Design, Element
-                UI, etc. and the use of various CSS preprocessors and
-                post-processors.
+                Fluent in React, Redux, Next.js and related tools for web
+                development, familiar with UI frameworks such as Ant Design,
+                Element UI, etc. and and various CSS tools such as Tailwind CSS,
+                to implement aesthetic and responsive websites.
               </p>
             </li>
             <li>
@@ -131,21 +144,15 @@ const Skills = () => {
           <ul>
             <li>
               <p>
-                Fluent in using Node.js and Express.js for building server-side
-                applications, with RESTful API development, HTTP request, etc.
+                Fluent in building server-side applications, including RESTful
+                API design, user authentication and authorization, security, and
+                third-party integrations.
               </p>
             </li>
             <li>
               <p>
-                Familiar with databases like MySQL, MongoDB and Firebase for
-                data management such as CRUD operations, schema design, etc.
-              </p>
-            </li>
-            <li>
-              <p>
-                Experienced with using Java Spring/Spring Boot to create
-                efficient applications, including data structures, RESTful APIs,
-                etc.
+                Fluent in NoSQL and relational databases with schema design,
+                optimization and data management.
               </p>
             </li>
           </ul>
@@ -168,22 +175,26 @@ const Skills = () => {
           <ul>
             <li>
               <p>
-                Familiar with packaging and front-end application optimization
-                with common build tools such as Vite.
+                Fluent in Docker for containerization, and cloud platforms for
+                infrastructure and file storage.
+              </p>
+            </li>
+            <li>
+              <p>
+                Familiar with automated testing tools, with test case design and
+                coverage.
               </p>
             </li>
             <li>
               <p>
                 Fluent in Agile (scrum) development methodology and process,
-                with the ability to move from prototyping to front-end and
-                back-end development.{" "}
+                with managing sprints in JIRA.
               </p>
             </li>
             <li>
               <p>
                 Fluent in Figma and other design tools to create project
-                prototypes, write product documentation, buried documents to
-                actual development and on-line development.
+                prototypes.
               </p>
             </li>
           </ul>

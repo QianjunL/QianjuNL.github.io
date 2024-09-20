@@ -3,21 +3,13 @@
 .experience {
   // background: linear-gradient(180deg, #0c0c1d, #111132);
   height: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
-  text-align: justify;
 
   @include mobile {
-    height: 100% !important; // Set height to auto for mobile
-    // overflow-y: auto !important; // Enable vertical scrolling
-    flex-direction: column; // Stack content vertically on mobile
-    // overflow-y: auto;
-    // width: 100vh;
+    height: 100% !important;
+    flex-direction: column;
     height: 100vw;
-    // flex-direction: column;
-    // overflow-y: auto;
-    // gap: 0;
   }
 
   img {
@@ -31,24 +23,32 @@
     padding: 0.5rem;
     letter-spacing: 0.05em;
     transition: color 0.3s ease;
-
     @include mobile {
       font-size: 12px;
     }
   }
 
-  // // try working on these
-  // vertical-timeline-element.vertical-timeline-element--left {
-  //   @include mobile {
-  //     background-color: white;
-  //   }
-  // }
+  .vertical-timeline-element-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
-  // .vertical-timeline-element-content.bounce-in {
-  //   @include mobile {
-  //     height: 200%;
-  //   }
-  // }
+    @media (max-width: 768px) {
+      padding: 1rem;
+    }
+  }
+
+  .vertical-timeline.vertical-timeline--two-columns:before {
+    left: -5% !important;
+    height: 100% !important;
+    margin-top: 1rem;
+  }
+
+  .vertical-timeline-element-content.bounce-in {
+    width: auto;
+  }
 
   .vertical-timeline-element-content.bounce-in:hover {
     color: black;
@@ -57,7 +57,6 @@
   }
 
   .vertical-timeline-element-content .vertical-timeline-element-date {
-    color: #663399;
-    font-weight: 1000;
+    display: none;
   }
 }
