@@ -48,7 +48,9 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>Qianjun Liang</motion.h2>
+          <motion.h2 variants={textVariants}>
+            Qianjun (Cheryl) Liang's Portfolio
+          </motion.h2>
           <motion.h1 variants={textVariants}>
             Full Stack Developer | Product Manager
           </motion.h1>

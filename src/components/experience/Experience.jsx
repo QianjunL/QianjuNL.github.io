@@ -81,26 +81,25 @@ const ExperienceCard = ({ item, position }) => {
           background: "transparent",
           boxShadow: "none",
           display: "flex",
-          justifyContent: "center", // Center horizontally
-          alignItems: "flex-start", // Allow content to grow from the top
-          padding: "2rem", // Padding for spacing
+          alignItems: "flex-start",
+          left: "0%",
+          marginLeft: "5rem",
         }}
         contentArrowStyle={{
-          borderRight: "12px solid orange",
-          left: "0%",
+          display: "none",
         }}
         iconStyle={{
           background: item.iconBg,
+          marginTop: "1rem",
           overflow: "hidden",
-          left: "-5%",
+          left: "5%",
         }}
         icon={<img src={item.logo} alt="" />}
       >
         <div className="textContainer">
           <motion.div variants={variants}>
-            <h3>
-              {item.title}, {item.date}
-            </h3>
+            <h3>{item.title}</h3>
+            <h3> {item.date}</h3>
             <p>{item.company_name}</p>
           </motion.div>
           <motion.div className="desc">
