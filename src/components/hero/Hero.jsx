@@ -52,7 +52,7 @@ const Hero = () => {
             Qianjun (Cheryl) Liang's Portfolio
           </motion.h2>
           <motion.h1 variants={textVariants}>
-            Full Stack Developer | Product Manager
+            Full-Stack Developer | Product Manager
           </motion.h1>
           <motion.div className="buttons" variants={textVariants}>
             <a href="#Portfolio">
@@ -96,7 +96,7 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        Full Stack Development
+        Full-Stack Development
       </motion.div>
       <div className="imageContainer">
         <img src="/header-img.svg" alt="hero" />
