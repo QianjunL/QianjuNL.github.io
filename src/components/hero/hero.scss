@@ -2,15 +2,21 @@
 
 .hero {
   // height: calc(100vh - 100px);
-  height: 100vh;
+  height: calc(var(--vh) * 100); 
+  // min-height: 100%;
+  // height: 100%;
   background: linear-gradient(180deg, #0c0c1d, #111132);
-  overflow: hidden;
+  // overflow: hidden;
   // z-index: 10;
   // padding: 20;
   position: relative;
 
   @include tablet {
     padding: 1rem;
+  }
+
+  @include mobile {
+    height: 100vh;
   }
 
   .wrapper {
@@ -23,6 +29,8 @@
       flex-direction: column;
       justify-content: center;
       gap: 40px;
+      // padding: 20px; /* Ensure padding for all viewports */
+      // width: 100%; 
 
       @include mobile {
         width: 100%;
@@ -88,7 +96,7 @@
   }
 
   .imageContainer {
-    height: 90%;
+    height: 60%;
     position: absolute;
     top: 140px;
     right: 60px;
@@ -106,8 +114,8 @@
     }
 
     img {
-      width: 100%;
-      height: 85%;
+      // width: 100%;
+      height: 90%;
       margin-top: 5rem;
       object-fit: contain;
     }
