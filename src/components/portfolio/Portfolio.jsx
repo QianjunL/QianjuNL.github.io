@@ -77,6 +77,7 @@ const Single = ({ item }) => {
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
             <iframe
+            className="iframe"
               src={item.video}
               width="640"
               height="480"
