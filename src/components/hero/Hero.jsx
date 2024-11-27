@@ -14,29 +14,29 @@ const textVariants = {
       staggerChildren: 0.1,
     },
   },
-  // scrollButton: {
-  //   opacity: 0,
-  //   y: 10,
-  //   transition: {
-  //     duration: 2,
-  //     repeat: Infinity,
-  //   },
-  // },
-};
-
-const scrollButtonVariants = {
-  initial: {
-    opacity: 1,
-    y: 0,
-  },
-  animate: {
-    y: [0, -10, 0], // Animate up and down
+  scrollButton: {
+    opacity: 0,
+    y: 10,
     transition: {
       duration: 2,
       repeat: Infinity,
     },
   },
 };
+
+// const scrollButtonVariants = {
+//   initial: {
+//     opacity: 1,
+//     y: 0,
+//   },
+//   animate: {
+//     y: [0, -10, 0], // Animate up and down
+//     transition: {
+//       duration: 2,
+//       repeat: Infinity,
+//     },
+//   },
+// };
 
 const sliderVariants = {
   initial: {
