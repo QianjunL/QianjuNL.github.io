@@ -17,7 +17,8 @@ const items = [
     date: "June 2024 - Present",
     points: [
       "Integrated all system APIs with Python Django backend, including data integration and real-time updates.",
-      "Implement user authentication and authorization using Redux for global state management.",
+      "Developed React components based on Figma design files, ensuring smooth user experience. ",
+      "Implemented role-based access control using Redux for global state management. ",
       "Resolve daily bugs, improving system stability and user experience.",
       "Gathered requirements and designed API architecture, leading to 100% functionality across the system.",
     ],
