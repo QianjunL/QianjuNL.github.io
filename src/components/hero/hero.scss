@@ -2,8 +2,8 @@
 
 .hero {
   // height: calc(100vh - 100px);
-  // height: calc(var(--vh) * 100);
-  height: 100%;
+  height: calc(var(--vh) * 100);
+  // height: 100%;
   // height: 100vh;
   // max-width: 1200px;
   // background: linear-gradient(180deg, #0c0c1d, #111132);
@@ -140,6 +140,7 @@
   }
 
   .scrollButton {
+    position: absolute;
     @include mobile {
     }
   }
