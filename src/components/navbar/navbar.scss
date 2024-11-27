@@ -2,10 +2,9 @@
 
 .navbar {
   height: 100px;
-  max-width: 1366px;
 
   .wrapper {
-    // max-width: 1366px;
+    max-width: 1366px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -29,6 +28,7 @@
   .social {
     display: flex;
     gap: 20px;
+    margin-right: 20px;
   }
 
   img {

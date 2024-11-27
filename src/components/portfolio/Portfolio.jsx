@@ -69,7 +69,7 @@ const Single = ({ item }) => {
   });
 
   // const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
-  const y = useTransform(scrollYProgress, [0, 1], [-50, 50]);
+  const y = useTransform(scrollYProgress, [0, 1], [-30, 50]);
 
   return (
     <section>
