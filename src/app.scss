@@ -53,13 +53,13 @@ a {
 //   }
 
 @mixin tablet {
-  @media (max-width: 1366px) {
+  @media (max-width: 1024px) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (max-width: 1920px) {
+  @media (max-width: 1440px) {
     @content;
   }
 }
