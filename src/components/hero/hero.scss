@@ -141,6 +141,8 @@
   }
 
   .scrollButton {
+    position: absolute;
+    bottom: 50px;
     @include mobile {
     }
   }
