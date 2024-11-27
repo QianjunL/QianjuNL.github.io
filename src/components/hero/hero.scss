@@ -3,10 +3,11 @@
 .hero {
   // height: calc(100vh - 100px);
   height: calc(var(--vh) * 100); 
-  // min-height: 100%;
-  // height: 100%;
+  min-height: 100%;
+  // height: 100vh;
+  width: 100%;
   background: linear-gradient(180deg, #0c0c1d, #111132);
-  // overflow: hidden;
+  overflow: hidden;
   // z-index: 10;
   // padding: 20;
   position: relative;
@@ -102,11 +103,21 @@
     right: 60px;
 
     @include mobile {
+      // height: 30%;
+      // width: 100%;
+      // top: unset;
+      // bottom: 0;
+      // right: 0;
       height: 30%;
       width: 100%;
       top: unset;
       bottom: 0;
-      right: 0;
+      right: unset;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     @include tablet {
@@ -115,9 +126,13 @@
 
     img {
       // width: 100%;
-      height: 90%;
+      height: 100%;
       margin-top: 5rem;
       object-fit: contain;
+
+      @include mobile {
+        height: 70%;
+      }
     }
   }
 
@@ -129,10 +144,14 @@
   .slidingTextContainer {
     position: absolute;
     font-size: 50vh;
-    bottom: -120px;
+    bottom: -50px;
     white-space: nowrap;
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
+
+    @include mobile {
+      display: none;
+    }
   }
 }
