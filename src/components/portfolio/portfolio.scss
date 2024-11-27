@@ -1,7 +1,14 @@
 @import "../../app.scss";
 
 .portfolio {
+  // position: relative;
+  // max-width: 1200px;
+  // align-items: center;
+
   position: relative;
+  max-width: 1200px;
+  margin: 0 auto; // Centers the portfolio container horizontally
+  padding: 0 20px;
 
   .progress {
     position: sticky;
