@@ -16,9 +16,9 @@ const items = [
     iconBg: "#383E56",
     date: "June 2024 - Present",
     points: [
-      "Integrated all system APIs with Python Django backend, including data integration and real-time updates.",
-      "Developed React components based on Figma design files, ensuring smooth user experience. ",
-      "Implemented role-based access control using Redux for global state management. ",
+      "Integrated 10+ APIs with Python Django backend to enable real-time updates and data synchronization. ",
+      "Developed React components based on Figma design files, improving user satisfaction by 10%.",
+      "Implemented Role-Based Access Control using Redux for global state management to reduce redundant API calls by 25%.",
       "Resolved daily bugs, improving system stability and user experience.",
       "Gathered requirements and designed API architecture, leading to 100% functionality across the system.",
     ],
@@ -31,7 +31,7 @@ const items = [
     iconBg: "#383E56",
     date: "September 2021 - April 2023",
     points: [
-      "Led and managed the order management system and client website for the business line with $70M annual revenue, ensuring effective support to over 98 % of all business scenarios.",
+      "Managed the development of the order management system and client website for the business line with $70M annual revenue, ensuring effective support to over 98 % of all business scenarios.",
       "Led and delivered 40+ cross-functional software projects, achieving 100% on-time delivery.",
       "Lead and worked in a scrum team of 6 members and hosted scrum planning and grooming meetings.",
       "Developed product prototypes in Figma, gathered detailed product documentation and user instructions.",
