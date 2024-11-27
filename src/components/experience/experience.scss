@@ -47,12 +47,12 @@
   }
 
   .vertical-timeline.vertical-timeline--two-columns:before {
-    left: 5% !important;
+    left: 7% !important;
     margin-top: 1rem;
 
     @include mobile {
       // display: none;
-      margin-left: 20px;
+      margin-left: 3%;
     }
   }
 
