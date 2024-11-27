@@ -14,9 +14,23 @@ const textVariants = {
       staggerChildren: 0.1,
     },
   },
-  scrollButton: {
-    opacity: 0,
-    y: 10,
+  // scrollButton: {
+  //   opacity: 0,
+  //   y: 10,
+  //   transition: {
+  //     duration: 2,
+  //     repeat: Infinity,
+  //   },
+  // },
+};
+
+const scrollButtonVariants = {
+  initial: {
+    opacity: 1,
+    y: 0,
+  },
+  animate: {
+    y: [0, -10, 0], // Animate up and down
     transition: {
       duration: 2,
       repeat: Infinity,
@@ -83,7 +97,7 @@ const Hero = () => {
           </motion.div>
           <motion.img
             className="scrollButton"
-            variants={textVariants}
+            variants={scrollButtonVariants}
             animate="scrollButton"
             src="/scroll.png"
             alt="scroll"
