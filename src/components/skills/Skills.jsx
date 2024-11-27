@@ -114,7 +114,7 @@ const Skills = () => {
               <p>
                 Fluent in React, Redux, Next.js and related tools for web
                 development, familiar with UI frameworks such as Ant Design,
-                Element UI, etc. and and various CSS tools such as Tailwind CSS,
+                Element UI, etc. and various CSS tools such as Tailwind CSS,
                 to implement aesthetic and responsive websites.
               </p>
             </li>
