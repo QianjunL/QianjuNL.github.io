@@ -59,7 +59,7 @@ a {
 }
 
 @mixin desktop {
-  @media (max-width: 1500px) {
+  @media (max-width: 1920px) {
     @content;
   }
 }
