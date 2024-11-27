@@ -106,7 +106,7 @@ const Skills = () => {
           <ul>
             <li>
               <p>
-                Proficient JavaScript MERN programming with experience in
+                Proficient in JavaScript MERN programming with experience in
                 multiple full-stack applications.
               </p>
             </li>
