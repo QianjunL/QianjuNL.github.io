@@ -2,11 +2,12 @@
 
 .contact {
   height: 100vh;
-  max-width: 1200px;
+
   margin: auto;
   display: flex;
   align-items: center;
   gap: 50px;
+  max-width: 1366px;
 
   @include mobile {
     width: 100%;
