@@ -10,10 +10,10 @@
   overflow: hidden;
   // z-index: 10;
   // padding: 20;
-  // position: relative;
-  // max-width: 1200px;
-  // margin: 0 auto;
-  // padding: 0 20px;
+  position: relative;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 20px;
 
   @include tablet {
     padding: 1rem;
